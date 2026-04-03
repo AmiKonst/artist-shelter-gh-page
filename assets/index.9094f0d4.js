@@ -28519,7 +28519,7 @@ const _sfc_main$5 = {
     );
 
     const changeLang = (code) => {
-        locale.setLocale(code);
+        locale.updateLocale(code);
         isLangOpen.value = false;
     };
 
@@ -29697,31 +29697,31 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => __vitePreload(() => import('./Home.dbaa732d.js'),true?["assets/Home.dbaa732d.js","assets/Home.78817a8d.css"]:void 0),
+        component: () => __vitePreload(() => import('./Home.5c325824.js'),true?["assets/Home.5c325824.js","assets/Home.78817a8d.css"]:void 0),
         abort: []
     },
     {
         path: '/about',
         name: 'about',
-        component: () => __vitePreload(() => import('./About.5a71ea2a.js'),true?["assets/About.5a71ea2a.js","assets/About.c81f7c9d.css"]:void 0),
+        component: () => __vitePreload(() => import('./About.05e505fc.js'),true?["assets/About.05e505fc.js","assets/About.c81f7c9d.css"]:void 0),
         abort: []
     },
     {
         path: '/contacts',
         name: 'contacts',
-        component: () => __vitePreload(() => import('./Contacts.528d91fc.js'),true?["assets/Contacts.528d91fc.js","assets/Contacts.55cd7939.css"]:void 0),
+        component: () => __vitePreload(() => import('./Contacts.d1381f64.js'),true?["assets/Contacts.d1381f64.js","assets/Contacts.55cd7939.css"]:void 0),
         abort: []
     },
     {
         path: '/visits',
         name: 'visits',
-        component: () => __vitePreload(() => import('./Visits.04fde614.js'),true?["assets/Visits.04fde614.js","assets/Visits.8b2f475a.css"]:void 0),
+        component: () => __vitePreload(() => import('./Visits.fa252d0e.js'),true?["assets/Visits.fa252d0e.js","assets/Visits.8b2f475a.css"]:void 0),
         abort: []
     },
     {
         path: '/:code',
         name: 'artist',
-        component: () => __vitePreload(() => import('./Artist.759965ff.js'),true?["assets/Artist.759965ff.js","assets/Artist.3e2ec9d8.css"]:void 0),
+        component: () => __vitePreload(() => import('./Artist.ece225ee.js'),true?["assets/Artist.ece225ee.js","assets/Artist.3e2ec9d8.css"]:void 0),
         props: true,
         abort: []
     },
