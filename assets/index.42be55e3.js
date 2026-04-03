@@ -28200,7 +28200,7 @@ const useArtistsApi = defineStore('artists-api', {
                 video: '/img/video-artists/tzelenski.mp4',
                 code: 'tzelenski',
                 name: 'Timofey Zelenski',
-                media: '',
+                media: 'https://disk.yandex.ru/d/d53qvLb_KD88yg',
                 links: {
                     applemusic: 'https://music.apple.com/us/artist/timofey-zelenski/1538858407',
                     yandexmusic: 'https://music.yandex.ru/artist/11251668',
@@ -28238,7 +28238,7 @@ const useArtistsApi = defineStore('artists-api', {
                 video: '/img/video-artists/truhanov.mp4',
                 code: 'truhanov',
                 name: 'Ilya Truhanov',
-                media: 'https://drive.google.com/file/d/1Fp84QQ3l4GEtTNk4-VgY1FMrarwxsXgB/view?usp=sharing',
+                media: '',
                 links: {
                     applemusic: 'https://music.apple.com/cy/artist/ilya-truhanov/286700468',
                     yandexmusic: 'https://music.yandex.ru/artist/558858',
@@ -29659,31 +29659,31 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => __vitePreload(() => import('./Home.cc0696c3.js'),true?["assets/Home.cc0696c3.js","assets/Home.78817a8d.css"]:void 0),
+        component: () => __vitePreload(() => import('./Home.55ae5994.js'),true?["assets/Home.55ae5994.js","assets/Home.78817a8d.css"]:void 0),
         abort: []
     },
     {
         path: '/about',
         name: 'about',
-        component: () => __vitePreload(() => import('./About.bf49d5a0.js'),true?["assets/About.bf49d5a0.js","assets/About.c81f7c9d.css"]:void 0),
+        component: () => __vitePreload(() => import('./About.b45ff269.js'),true?["assets/About.b45ff269.js","assets/About.c81f7c9d.css"]:void 0),
         abort: []
     },
     {
         path: '/contacts',
         name: 'contacts',
-        component: () => __vitePreload(() => import('./Contacts.129c0baf.js'),true?["assets/Contacts.129c0baf.js","assets/Contacts.55cd7939.css"]:void 0),
+        component: () => __vitePreload(() => import('./Contacts.186337b9.js'),true?["assets/Contacts.186337b9.js","assets/Contacts.55cd7939.css"]:void 0),
         abort: []
     },
     {
         path: '/visits',
         name: 'visits',
-        component: () => __vitePreload(() => import('./Visits.f1f584a5.js'),true?["assets/Visits.f1f584a5.js","assets/Visits.8b2f475a.css"]:void 0),
+        component: () => __vitePreload(() => import('./Visits.f922bad2.js'),true?["assets/Visits.f922bad2.js","assets/Visits.8b2f475a.css"]:void 0),
         abort: []
     },
     {
         path: '/:code',
         name: 'artist',
-        component: () => __vitePreload(() => import('./Artist.ed840989.js'),true?["assets/Artist.ed840989.js","assets/Artist.3e2ec9d8.css"]:void 0),
+        component: () => __vitePreload(() => import('./Artist.bd6d1c8d.js'),true?["assets/Artist.bd6d1c8d.js","assets/Artist.3e2ec9d8.css"]:void 0),
         props: true,
         abort: []
     },
