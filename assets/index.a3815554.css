@@ -166,9 +166,6 @@ nav a.router-link-exact-active[data-v-2e031dc1] {
 .header-left nav a[data-v-2e031dc1] {
     padding: 0 4px;
 }
-.header-left nav a.router-link-active[data-v-2e031dc1] {
-    padding-left: 0;
-}
 .header-left nav a.router-link-active[data-v-2e031dc1]::after {
     display: none;
 }
