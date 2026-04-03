@@ -7,21 +7,9 @@
 </head>
 <body>
 	<script type="text/javascript">
-		 // Сохраняем путь, чтобы восстановить его после перезагрузки
-		// if (window.sessionStorage) {
-		// 	const redirect = sessionStorage.redirect
-		// 	if (redirect) {
-		// 		delete sessionStorage.redirect
-		// 		window.history.replaceState(null, null, redirect)
-		// 	} else {
-		// 		const pathname = window.location.pathname
-		// 		sessionStorage.redirect = pathname
-		// 		window.location.replace('/')
-		// 	}
-		// 	return;
-		// };
+		localStorage.page = window.location.href
 
-		location.href = 'https://bilbomusic.com/';
+		location.href = 'https://artist-shelter.com/';
 	</script>
 </body>
 </html>
