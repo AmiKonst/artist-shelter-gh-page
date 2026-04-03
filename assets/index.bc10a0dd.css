@@ -248,7 +248,7 @@ footer[data-v-6c9aa71b] {
 }
 #modalOverlay > div[data-v-0afeafe0] {
   max-height: 80vh;
-  overflow: auto;
+  overflow: hidden;
   background: #fff9db;
   width: 90%;
   max-width: 500px;
@@ -272,7 +272,8 @@ footer[data-v-6c9aa71b] {
   font-size: 24px;
 }
 #modalOverlay > div .stats[data-v-0afeafe0] {
-  max-height: 32vh;
+  height: 1%;
+  max-height: 30vh;
   overflow: auto;
   background: white;
   padding: 20px;
