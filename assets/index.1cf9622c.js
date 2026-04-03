@@ -29390,8 +29390,42 @@ const _sfc_main$2 = {
 
 
     function copyToClipboard(text) {
-       navigator.clipboard.writeText(text);
-       alert("Скопировано в буфер обмена! 🐾");
+        if (navigator.clipboard && window.isSecureContext) {
+            // Современный метод
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Скопировано! 🐾");
+            }).catch(err => {
+                // Если современный метод не сработал, пробуем старый
+                fallbackCopyTextToClipboard(text);
+            });
+        } else {
+            // Старый метод (для HTTP или старых браузеров)
+            fallbackCopyTextToClipboard(text);
+        }
+    }
+
+    function fallbackCopyTextToClipboard(text) {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        
+        // Делаем элемент невидимым, но оставляем в DOM
+        textArea.style.position = "fixed";
+        textArea.style.left = "-9999px";
+        textArea.style.top = "0";
+        document.body.appendChild(textArea);
+        
+        textArea.focus();
+        textArea.select();
+        textArea.setSelectionRange(0, 99999); // Для мобильных устройств
+
+        try {
+            document.execCommand('copy');
+            alert("Скопировано! 🐾");
+        } catch (err) {
+            console.error('Ошибка копирования', err);
+        }
+
+        document.body.removeChild(textArea);
     }
 
     function openShareModal() {
@@ -29663,31 +29697,31 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => __vitePreload(() => import('./Home.9ce60d4c.js'),true?["assets/Home.9ce60d4c.js","assets/Home.78817a8d.css"]:void 0),
+        component: () => __vitePreload(() => import('./Home.5cb0d6b3.js'),true?["assets/Home.5cb0d6b3.js","assets/Home.78817a8d.css"]:void 0),
         abort: []
     },
     {
         path: '/about',
         name: 'about',
-        component: () => __vitePreload(() => import('./About.4b8ee65c.js'),true?["assets/About.4b8ee65c.js","assets/About.c81f7c9d.css"]:void 0),
+        component: () => __vitePreload(() => import('./About.c57e4b1c.js'),true?["assets/About.c57e4b1c.js","assets/About.c81f7c9d.css"]:void 0),
         abort: []
     },
     {
         path: '/contacts',
         name: 'contacts',
-        component: () => __vitePreload(() => import('./Contacts.7513e16f.js'),true?["assets/Contacts.7513e16f.js","assets/Contacts.55cd7939.css"]:void 0),
+        component: () => __vitePreload(() => import('./Contacts.6d46c407.js'),true?["assets/Contacts.6d46c407.js","assets/Contacts.55cd7939.css"]:void 0),
         abort: []
     },
     {
         path: '/visits',
         name: 'visits',
-        component: () => __vitePreload(() => import('./Visits.0c8bc44b.js'),true?["assets/Visits.0c8bc44b.js","assets/Visits.8b2f475a.css"]:void 0),
+        component: () => __vitePreload(() => import('./Visits.5e757008.js'),true?["assets/Visits.5e757008.js","assets/Visits.8b2f475a.css"]:void 0),
         abort: []
     },
     {
         path: '/:code',
         name: 'artist',
-        component: () => __vitePreload(() => import('./Artist.28b4a785.js'),true?["assets/Artist.28b4a785.js","assets/Artist.3e2ec9d8.css"]:void 0),
+        component: () => __vitePreload(() => import('./Artist.8a7aa469.js'),true?["assets/Artist.8a7aa469.js","assets/Artist.3e2ec9d8.css"]:void 0),
         props: true,
         abort: []
     },
