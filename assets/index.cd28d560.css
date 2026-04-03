@@ -3,8 +3,6 @@ header[data-v-2e031dc1] {
   background: var(--card-bg);
   padding: 15px 0;
   border-bottom: 4px solid var(--primary);
-  position: sticky;
-  top: 0;
   z-index: 100;
   box-shadow: var(--shadow);
 }
@@ -159,16 +157,25 @@ nav a.router-link-exact-active[data-v-2e031dc1] {
     align-items: start;
 }
 .header-left nav[data-v-2e031dc1] {
-    flex-direction: column;
+    flex-direction: row;
     gap: 4px;
     font-size: 12px;
+    flex-wrap: wrap;
+    margin-left: -4px;
+}
+.header-left nav a[data-v-2e031dc1] {
+    padding: 0 4px;
 }
 .header-left nav a.router-link-active[data-v-2e031dc1] {
-    padding-left: 8px;
-    border-left: 3px solid var(--primary);
+    padding-left: 0;
 }
 .header-left nav a.router-link-active[data-v-2e031dc1]::after {
     display: none;
+}
+.header-right[data-v-2e031dc1] {
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
 }
 }
 /* Центрирование выпадающего списка на мобилках */
@@ -243,7 +250,7 @@ footer[data-v-6c9aa71b] {
   justify-content: center;
 }
 #modalOverlay > div[data-v-0afeafe0] {
-  max-height: 96vh;
+  max-height: 80vh;
   overflow: auto;
   background: #fff9db;
   width: 90%;
