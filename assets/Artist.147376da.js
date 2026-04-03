@@ -1,4 +1,4 @@
-import { _ as _export_sfc, s as stores, u as useI18n, o as openBlock, c as createElementBlock, b as createBaseVNode, d as createCommentVNode, F as Fragment, t as toDisplayString, a as unref, l as ref, m as onMounted, p as onUnmounted, h as createBlock, f as createTextVNode } from './index.42be55e3.js';
+import { _ as _export_sfc, s as stores, u as useI18n, o as openBlock, c as createElementBlock, b as createBaseVNode, d as createCommentVNode, F as Fragment, t as toDisplayString, a as unref, l as ref, m as onMounted, p as onUnmounted, h as createBlock, f as createTextVNode } from './index.cf977f37.js';
 
 const Preview_vue_vue_type_style_index_0_scoped_c08d1d11_lang = '';
 
@@ -129,6 +129,10 @@ const _sfc_main = {
     onMounted(() => {
         checkWidth();
         window.addEventListener('resize', checkWidth);
+
+        setTimeout(() => {
+            artist.value = stores.artists().getArtist(props.code);
+        }, 100);
     });
 
     onUnmounted(() => {

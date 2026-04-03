@@ -29659,31 +29659,31 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => __vitePreload(() => import('./Home.55ae5994.js'),true?["assets/Home.55ae5994.js","assets/Home.78817a8d.css"]:void 0),
+        component: () => __vitePreload(() => import('./Home.cdb28dd2.js'),true?["assets/Home.cdb28dd2.js","assets/Home.78817a8d.css"]:void 0),
         abort: []
     },
     {
         path: '/about',
         name: 'about',
-        component: () => __vitePreload(() => import('./About.b45ff269.js'),true?["assets/About.b45ff269.js","assets/About.c81f7c9d.css"]:void 0),
+        component: () => __vitePreload(() => import('./About.6c45b561.js'),true?["assets/About.6c45b561.js","assets/About.c81f7c9d.css"]:void 0),
         abort: []
     },
     {
         path: '/contacts',
         name: 'contacts',
-        component: () => __vitePreload(() => import('./Contacts.186337b9.js'),true?["assets/Contacts.186337b9.js","assets/Contacts.55cd7939.css"]:void 0),
+        component: () => __vitePreload(() => import('./Contacts.10b5ef85.js'),true?["assets/Contacts.10b5ef85.js","assets/Contacts.55cd7939.css"]:void 0),
         abort: []
     },
     {
         path: '/visits',
         name: 'visits',
-        component: () => __vitePreload(() => import('./Visits.f922bad2.js'),true?["assets/Visits.f922bad2.js","assets/Visits.8b2f475a.css"]:void 0),
+        component: () => __vitePreload(() => import('./Visits.66c7c023.js'),true?["assets/Visits.66c7c023.js","assets/Visits.8b2f475a.css"]:void 0),
         abort: []
     },
     {
         path: '/:code',
         name: 'artist',
-        component: () => __vitePreload(() => import('./Artist.bd6d1c8d.js'),true?["assets/Artist.bd6d1c8d.js","assets/Artist.3e2ec9d8.css"]:void 0),
+        component: () => __vitePreload(() => import('./Artist.147376da.js'),true?["assets/Artist.147376da.js","assets/Artist.3e2ec9d8.css"]:void 0),
         props: true,
         abort: []
     },
