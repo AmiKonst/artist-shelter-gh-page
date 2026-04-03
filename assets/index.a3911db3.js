@@ -29659,31 +29659,31 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => __vitePreload(() => import('./Home.8fdfaac3.js'),true?["assets/Home.8fdfaac3.js","assets/Home.78817a8d.css"]:void 0),
+        component: () => __vitePreload(() => import('./Home.cc0696c3.js'),true?["assets/Home.cc0696c3.js","assets/Home.78817a8d.css"]:void 0),
         abort: []
     },
     {
         path: '/about',
         name: 'about',
-        component: () => __vitePreload(() => import('./About.e505062a.js'),true?["assets/About.e505062a.js","assets/About.c81f7c9d.css"]:void 0),
+        component: () => __vitePreload(() => import('./About.bf49d5a0.js'),true?["assets/About.bf49d5a0.js","assets/About.c81f7c9d.css"]:void 0),
         abort: []
     },
     {
         path: '/contacts',
         name: 'contacts',
-        component: () => __vitePreload(() => import('./Contacts.7e27834d.js'),true?["assets/Contacts.7e27834d.js","assets/Contacts.55cd7939.css"]:void 0),
+        component: () => __vitePreload(() => import('./Contacts.129c0baf.js'),true?["assets/Contacts.129c0baf.js","assets/Contacts.55cd7939.css"]:void 0),
         abort: []
     },
     {
         path: '/visits',
         name: 'visits',
-        component: () => __vitePreload(() => import('./Visits.a6b02671.js'),true?["assets/Visits.a6b02671.js","assets/Visits.8b2f475a.css"]:void 0),
+        component: () => __vitePreload(() => import('./Visits.f1f584a5.js'),true?["assets/Visits.f1f584a5.js","assets/Visits.8b2f475a.css"]:void 0),
         abort: []
     },
     {
         path: '/:code',
         name: 'artist',
-        component: () => __vitePreload(() => import('./Artist.7a046c75.js'),true?["assets/Artist.7a046c75.js","assets/Artist.3e2ec9d8.css"]:void 0),
+        component: () => __vitePreload(() => import('./Artist.ed840989.js'),true?["assets/Artist.ed840989.js","assets/Artist.3e2ec9d8.css"]:void 0),
         props: true,
         abort: []
     },
@@ -29706,6 +29706,21 @@ const router = createRouter({
         } else {
             return { top: 0, behavior: 'smooth' }; // smooth сделает переход плавным
         }
+    }
+});
+
+router.beforeEach((to, from, next) => {
+    const savedPage = localStorage.getItem('page');
+
+    // Если мы зашли на корень '/' и у нас есть сохраненная страница
+    if (to.path === '/' && savedPage) {
+        // Очищаем, чтобы не зациклиться при последующих переходах
+        localStorage.removeItem('page');
+        
+        // Переходим по сохраненному пути
+        next(savedPage);
+    } else {
+        next();
     }
 });
 
