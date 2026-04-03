@@ -29486,7 +29486,7 @@ return (_ctx, _cache) => {
               _cache[24] || (_cache[24] = createBaseVNode("div", null, null, -1 /* HOISTED */)),
               createCommentVNode(" Копирование ссылки "),
               createBaseVNode("button", {
-                onClick: _cache[2] || (_cache[2] = $event => (copyToClipboard(`https://https://artist-shelter.com/${unref(artists).share.code}`)))
+                onClick: _cache[2] || (_cache[2] = $event => (copyToClipboard(`https://artist-shelter.com/${unref(artists).share.code}`)))
               }, [
                 _cache[14] || (_cache[14] = createBaseVNode("span", null, "🔗", -1 /* HOISTED */)),
                 createTextVNode(" " + toDisplayString$1(unref(t)('ui.share.link')), 1 /* TEXT */)
@@ -29697,31 +29697,31 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => __vitePreload(() => import('./Home.45b4246e.js'),true?["assets/Home.45b4246e.js","assets/Home.78817a8d.css"]:void 0),
+        component: () => __vitePreload(() => import('./Home.276bf65b.js'),true?["assets/Home.276bf65b.js","assets/Home.78817a8d.css"]:void 0),
         abort: []
     },
     {
         path: '/about',
         name: 'about',
-        component: () => __vitePreload(() => import('./About.86fe10d7.js'),true?["assets/About.86fe10d7.js","assets/About.c81f7c9d.css"]:void 0),
+        component: () => __vitePreload(() => import('./About.c7d12115.js'),true?["assets/About.c7d12115.js","assets/About.c81f7c9d.css"]:void 0),
         abort: []
     },
     {
         path: '/contacts',
         name: 'contacts',
-        component: () => __vitePreload(() => import('./Contacts.1e0d3b19.js'),true?["assets/Contacts.1e0d3b19.js","assets/Contacts.55cd7939.css"]:void 0),
+        component: () => __vitePreload(() => import('./Contacts.9af7aaba.js'),true?["assets/Contacts.9af7aaba.js","assets/Contacts.55cd7939.css"]:void 0),
         abort: []
     },
     {
         path: '/visits',
         name: 'visits',
-        component: () => __vitePreload(() => import('./Visits.709a5025.js'),true?["assets/Visits.709a5025.js","assets/Visits.8b2f475a.css"]:void 0),
+        component: () => __vitePreload(() => import('./Visits.0d779ef5.js'),true?["assets/Visits.0d779ef5.js","assets/Visits.8b2f475a.css"]:void 0),
         abort: []
     },
     {
         path: '/:code',
         name: 'artist',
-        component: () => __vitePreload(() => import('./Artist.48554635.js'),true?["assets/Artist.48554635.js","assets/Artist.3e2ec9d8.css"]:void 0),
+        component: () => __vitePreload(() => import('./Artist.c3d749ce.js'),true?["assets/Artist.c3d749ce.js","assets/Artist.3e2ec9d8.css"]:void 0),
         props: true,
         abort: []
     },
