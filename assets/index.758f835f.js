@@ -28759,6 +28759,7 @@ const _sfc_main$3 = {
     }
 
     function showAdoptionModal(artistName) {
+        document.body.style.overflow = 'hidden';
         showed.value = true;
 
         // Небольшая задержка для плавного появления
@@ -28771,6 +28772,7 @@ const _sfc_main$3 = {
         modal.value.style.transform = 'scale(0.5)';
         setTimeout(() => {
             showed.value = false;
+            document.body.style.overflow = 'auto';
             artists.adopt = null;
         }, 200);
     }
@@ -29393,6 +29395,7 @@ const _sfc_main$2 = {
     }
 
     function openShareModal() {
+        document.body.style.overflow = 'hidden';
         showed.value = true;
 
         // 1. Сбрасываем начальное состояние для анимации
@@ -29409,6 +29412,7 @@ const _sfc_main$2 = {
 
     function closeShareModal() {
         showed.value = false;
+        document.body.style.overflow = 'auto';
 
         modal.value.style.transform = 'scale(0.8)';
         modal.value.style.opacity = '0';
@@ -29659,31 +29663,31 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => __vitePreload(() => import('./Home.cdb28dd2.js'),true?["assets/Home.cdb28dd2.js","assets/Home.78817a8d.css"]:void 0),
+        component: () => __vitePreload(() => import('./Home.9ce60d4c.js'),true?["assets/Home.9ce60d4c.js","assets/Home.78817a8d.css"]:void 0),
         abort: []
     },
     {
         path: '/about',
         name: 'about',
-        component: () => __vitePreload(() => import('./About.6c45b561.js'),true?["assets/About.6c45b561.js","assets/About.c81f7c9d.css"]:void 0),
+        component: () => __vitePreload(() => import('./About.4b8ee65c.js'),true?["assets/About.4b8ee65c.js","assets/About.c81f7c9d.css"]:void 0),
         abort: []
     },
     {
         path: '/contacts',
         name: 'contacts',
-        component: () => __vitePreload(() => import('./Contacts.10b5ef85.js'),true?["assets/Contacts.10b5ef85.js","assets/Contacts.55cd7939.css"]:void 0),
+        component: () => __vitePreload(() => import('./Contacts.7513e16f.js'),true?["assets/Contacts.7513e16f.js","assets/Contacts.55cd7939.css"]:void 0),
         abort: []
     },
     {
         path: '/visits',
         name: 'visits',
-        component: () => __vitePreload(() => import('./Visits.66c7c023.js'),true?["assets/Visits.66c7c023.js","assets/Visits.8b2f475a.css"]:void 0),
+        component: () => __vitePreload(() => import('./Visits.0c8bc44b.js'),true?["assets/Visits.0c8bc44b.js","assets/Visits.8b2f475a.css"]:void 0),
         abort: []
     },
     {
         path: '/:code',
         name: 'artist',
-        component: () => __vitePreload(() => import('./Artist.147376da.js'),true?["assets/Artist.147376da.js","assets/Artist.3e2ec9d8.css"]:void 0),
+        component: () => __vitePreload(() => import('./Artist.28b4a785.js'),true?["assets/Artist.28b4a785.js","assets/Artist.3e2ec9d8.css"]:void 0),
         props: true,
         abort: []
     },
