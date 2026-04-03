@@ -272,6 +272,8 @@ footer[data-v-6c9aa71b] {
   font-size: 24px;
 }
 #modalOverlay > div .stats[data-v-0afeafe0] {
+  max-height: 32vh;
+  overflow: auto;
   background: white;
   padding: 20px;
   border-radius: 12px;
