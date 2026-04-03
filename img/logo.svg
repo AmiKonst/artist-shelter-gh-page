@@ -1,0 +1,14 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns='http://www.w3.org/2000/svg'>
+  <!-- Фон (Закругленный квадрат) -->
+  <rect width="200" height="200" rx="40" fill="#FF6B6B" />
+  
+  <!-- Тело домика (Приют) -->
+  <path d="M50 100 L100 50 L150 100 V150 H50 Z" fill="white" />
+  
+  <!-- Лапка или элемент декора внутри -->
+  <circle cx="90" cy="130" r="15" fill="#FF6B6B" />
+  <path d="M100 130 V105 Q100 95 115 100" stroke="#FF6B6B" stroke-width="8" fill="none" stroke-linecap="round" />
+  
+  <!-- Верхний контур крыши (Бирюзовый) -->
+  <path d="M45 102 L100 47 L155 102" stroke="#4ECDC4" stroke-width="10" fill="none" stroke-linecap="round" />
+</svg>

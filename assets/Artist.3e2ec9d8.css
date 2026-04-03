@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* Стили кнопок (вынесены для соответствия общему дизайну) */
+.btn[data-v-c08d1d11] {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn[data-v-c08d1d11]:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+.btn-main[data-v-c08d1d11] {
+  background: var(--text-main);
+  color: white;
+}
+.btn-action[data-v-c08d1d11] {
+  background: var(--primary);
+  color: white;
+}
+.profile-left .actions[data-v-c08d1d11] {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.artist-photo[data-v-c08d1d11] {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #e2f3f1;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--secondary);
+  overflow: hidden;
+}
+.artist-photo img[data-v-c08d1d11], .artist-photo .artist-video[data-v-c08d1d11] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* БЛОК ПИТАНИЯ/УХОДА */
+.care-notes[data-v-c08d1d11] {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff9db;
+  border-radius: 12px;
+  border: 1px dashed #fab005;
+}
+.care-notes p[data-v-c08d1d11] {
+  font-size: 13px;
+}
+.care-notes h3[data-v-c08d1d11] {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.actions[data-v-c08d1d11] {
+  margin-top: 30px;
+}
+/* Стили кнопок (вынесены для соответствия общему дизайну) */
+.btn[data-v-7a09ed22] {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn[data-v-7a09ed22]:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+.btn-main[data-v-7a09ed22] {
+  background: var(--text-main);
+  color: white;
+}
+.btn-action[data-v-7a09ed22] {
+  background: var(--primary);
+  color: white;
+}
+.container[data-v-7a09ed22] {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ОСНОВНАЯ КАРТОЧКА */
+.profile-grid[data-v-7a09ed22] {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 30px;
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.profile-grid .description[data-v-7a09ed22] {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin: 0 0 25px;
+}
+.profile-grid .attention[data-v-7a09ed22] {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.profile-grid .profile-left[data-v-7a09ed22] {
+  margin: 0 0 25px;
+}
+.badge[data-v-7a09ed22] {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #f1f5f9;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--text-muted);
+}
+h1[data-v-7a09ed22] {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+.status[data-v-7a09ed22] {
+  color: var(--secondary);
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* ХАРАКТЕРИСТИКИ (ВЕТ-КАРТА) */
+.traits[data-v-7a09ed22] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 0 0 25px;
+}
+.trait-item[data-v-7a09ed22] {
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border-left: 4px solid var(--secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.trait-label[data-v-7a09ed22] {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 800;
+}
+.trait-value[data-v-7a09ed22] {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* КНОПКИ ДЕЙСТВИЯ */
+.actions[data-v-7a09ed22] {
+  margin-top: 30px;
+}
+.btn-large[data-v-7a09ed22] {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+.btn-adopt[data-v-7a09ed22] {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 0 #e65252;
+}
+.btn-adopt[data-v-7a09ed22]:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+.btn-share[data-v-7a09ed22] {
+  background: #f1f5f9;
+  color: var(--text-main);
+}
+@media (max-width: 768px) {
+.profile-grid[data-v-7a09ed22] {
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+}
+/* Дополнительные стили для блока ссылок */
+.social-passport[data-v-7a09ed22] {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f1f5f9;
+  border-radius: var(--radius);
+  border: 2px solid #e2e8f0;
+}
+.social-passport p[data-v-7a09ed22] {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 12px;
+  font-style: italic;
+}
+.social-passport h3[data-v-7a09ed22] {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.social-links[data-v-7a09ed22] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.social-item[data-v-7a09ed22] {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #cbd5e1;
+  transition: 0.2s;
+}
+.social-item[data-v-7a09ed22]:hover {
+  border-color: var(--primary);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.social-item span[data-v-7a09ed22] {
+  font-size: 16px;
+}
