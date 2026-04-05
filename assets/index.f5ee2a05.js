@@ -28232,25 +28232,25 @@ const useArtistsApi = defineStore('artists-api', {
                     vk: 'https://vk.com/i_am_tokee',
                 }
             },
-            // {
-            //     id: 4,
-            //     photo: '/img/artists/truhanov.jpg',
-            //     video: '/img/video-artists/truhanov.mp4',
-            //     code: 'truhanov',
-            //     name: 'Ilya Truhanov',
-            //     media: '',
-            //     links: {
-            //         applemusic: 'https://music.apple.com/cy/artist/ilya-truhanov/286700468',
-            //         yandexmusic: 'https://music.yandex.ru/artist/558858',
-            //         // spotify: '',
-            //         youtube: 'https://music.youtube.com/channel/UCIU1FrSjI6Iz9zkeWmnHutQ',
-            //         // instagram: '',
-            //         // telegram: '',
-            //         // threads: '',
-            //         // soundcloud: '',
-            //         vk: 'https://vk.com/artist/ilyatruhanov',
-            //     }
-            // }
+            {
+                id: 4,
+                photo: '/img/artists/truhanov.jpg',
+                video: '/img/video-artists/truhanov.mp4',
+                code: 'truhanov',
+                name: 'Ilya Truhanov',
+                media: '',
+                links: {
+                    applemusic: 'https://music.apple.com/cy/artist/ilya-truhanov/286700468',
+                    yandexmusic: 'https://music.yandex.ru/artist/558858',
+                    // spotify: '',
+                    youtube: 'https://music.youtube.com/channel/UCIU1FrSjI6Iz9zkeWmnHutQ',
+                    // instagram: '',
+                    // telegram: '',
+                    // threads: '',
+                    // soundcloud: '',
+                    vk: 'https://vk.com/artist/ilyatruhanov',
+                }
+            }
         ]
     }),
     actions: {
@@ -29697,31 +29697,31 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => __vitePreload(() => import('./Home.5c325824.js'),true?["assets/Home.5c325824.js","assets/Home.78817a8d.css"]:void 0),
+        component: () => __vitePreload(() => import('./Home.949b4f79.js'),true?["assets/Home.949b4f79.js","assets/Home.78817a8d.css"]:void 0),
         abort: []
     },
     {
         path: '/about',
         name: 'about',
-        component: () => __vitePreload(() => import('./About.05e505fc.js'),true?["assets/About.05e505fc.js","assets/About.c81f7c9d.css"]:void 0),
+        component: () => __vitePreload(() => import('./About.fd6e8566.js'),true?["assets/About.fd6e8566.js","assets/About.c81f7c9d.css"]:void 0),
         abort: []
     },
     {
         path: '/contacts',
         name: 'contacts',
-        component: () => __vitePreload(() => import('./Contacts.d1381f64.js'),true?["assets/Contacts.d1381f64.js","assets/Contacts.55cd7939.css"]:void 0),
+        component: () => __vitePreload(() => import('./Contacts.925cc097.js'),true?["assets/Contacts.925cc097.js","assets/Contacts.55cd7939.css"]:void 0),
         abort: []
     },
     {
         path: '/visits',
         name: 'visits',
-        component: () => __vitePreload(() => import('./Visits.fa252d0e.js'),true?["assets/Visits.fa252d0e.js","assets/Visits.8b2f475a.css"]:void 0),
+        component: () => __vitePreload(() => import('./Visits.45490993.js'),true?["assets/Visits.45490993.js","assets/Visits.8b2f475a.css"]:void 0),
         abort: []
     },
     {
         path: '/:code',
         name: 'artist',
-        component: () => __vitePreload(() => import('./Artist.ece225ee.js'),true?["assets/Artist.ece225ee.js","assets/Artist.3e2ec9d8.css"]:void 0),
+        component: () => __vitePreload(() => import('./Artist.78743799.js'),true?["assets/Artist.78743799.js","assets/Artist.3e2ec9d8.css"]:void 0),
         props: true,
         abort: []
     },
